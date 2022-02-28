@@ -1,6 +1,6 @@
 # Svelte InertiaJS Laravel Template
 
-This is a bare bones project template to get you up and runnign with a Svelte and Laravel Fullstack application.
+This is a bare bones project template to get you up and running with a Svelte and Laravel Fullstack application.
 
 ## How to get started.
 
@@ -10,9 +10,9 @@ Additonally to get up and running with the mysql database you need to install [m
 
 The easiet way to install these dependencies is using a package manager, as shown below for each target platform below:
 
--   **OSX**: [Homebrew](https://brew.sh/)
--   **WINDOWS**: [Chocolatly](https://chocolatey.org/)
--   **Linux**: apt _Installed on most linux distributions by default_
+- **OSX**: [Homebrew](https://brew.sh/)
+- **WINDOWS**: [Chocolatly](https://chocolatey.org/)
+- **Linux**: apt (_Installed on most linux distributions by default_)
 
 ## How to setup a local dev environment
 
@@ -47,7 +47,7 @@ npm run dev
 npm run hot
 ```
 
-## Setup Database configuration
+## Setup Database
 
 ```sh
 cp .env.example .env
