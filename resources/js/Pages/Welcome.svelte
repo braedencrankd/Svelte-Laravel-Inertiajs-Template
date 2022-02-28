@@ -1,5 +1,6 @@
-<main class="flex flex-col justify-center h-screen">
-    <h1 class="text-4xl text-orange-500 font-bold text-center">
-        Welcome to Inertia Svelte!
-    </h1>
+<main class="flex h-screen flex-col justify-center gap-6">
+  <h1 class="text-center text-4xl font-bold text-orange-500">
+    Welcome to a Laravel + Svelte App!
+  </h1>
+  <div class="text-center text-4xl">🎉 🙌</div>
 </main>
