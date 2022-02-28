@@ -12,15 +12,15 @@ The easiet way to install these dependencies is using a package manager, as show
 
 -   **OSX**: [Homebrew](https://brew.sh/)
 -   **WINDOWS**: [Chocolatly](https://chocolatey.org/)
-    -- **Linux**: apt _Installed on most linux distributions by default_
+-   **Linux**: apt _Installed on most linux distributions by default_
 
-## How to run locally
+## How to setup a local dev environment
 
 Clone the repo locally:
 
 ```sh
-git clone https://github.com/braedencrankd/laravel-inertiajs-template.git
-cd laravel-inertiajs-template
+git clone https://github.com/braedencrankd/Laravel-Inertiajs-Template.git
+cd Laravel-Inertiajs-Template
 ```
 
 **Install PHP dependencies:**
@@ -47,10 +47,28 @@ npm run dev
 npm run hot
 ```
 
-**Setup Database configuration:**
+## Setup Database configuration
 
 ```sh
 cp .env.example .env
 ```
 
-Edit the database configuration section in the .env file to connect to database of your choice
+_Edit the database configuration section in the .env file to connect to database of your choice_
+
+**Generate a new application key**
+
+```sh
+php artisan key:generate
+```
+
+**Run the database migrations (Set the database connection in .env before migrating)**
+
+```sh
+php artisan migrate
+```
+
+**Finally run the dev server**
+
+```sh
+php artisan serve
+```
