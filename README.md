@@ -16,11 +16,13 @@ The easiet way to install these dependencies is using a package manager, as show
 
 ## How to setup a local dev environment
 
-Clone the repo locally:
+**Clone the repo locally:**
+
+You can use degit to clone the repo. (Change _example-project_ to your project name)
 
 ```sh
-git clone https://github.com/braedencrankd/Laravel-Inertiajs-Template.git
-cd Laravel-Inertiajs-Template
+npx degit braedencrankd/Svelte-Laravel-Inertiajs-Template example-project
+cd example-project
 ```
 
 **Install PHP dependencies:**
