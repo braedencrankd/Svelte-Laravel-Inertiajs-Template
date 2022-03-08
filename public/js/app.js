@@ -4693,12 +4693,17 @@ module.exports = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _inertiajs_inertia_svelte__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-svelte */ "./node_modules/@inertiajs/inertia-svelte/src/index.js");
 /* harmony import */ var _inertiajs_progress__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/progress */ "./node_modules/@inertiajs/progress/dist/index.js");
+var _window$document$getE;
+
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
-_inertiajs_progress__WEBPACK_IMPORTED_MODULE_1__.InertiaProgress.init();
+var appName = ((_window$document$getE = window.document.getElementsByTagName("title")[0]) === null || _window$document$getE === void 0 ? void 0 : _window$document$getE.innerText) || "Laravel";
 (0,_inertiajs_inertia_svelte__WEBPACK_IMPORTED_MODULE_0__.createInertiaApp)({
+  title: function title(_title) {
+    return "".concat(_title, " - ").concat(appName);
+  },
   resolve: function resolve(name) {
     return __webpack_require__("./resources/js/Pages sync recursive ^\\.\\/.*\\.svelte$")("./".concat(name, ".svelte"));
   },
@@ -4711,6 +4716,9 @@ _inertiajs_progress__WEBPACK_IMPORTED_MODULE_1__.InertiaProgress.init();
       props: props
     });
   }
+});
+_inertiajs_progress__WEBPACK_IMPORTED_MODULE_1__.InertiaProgress.init({
+  color: "#4B5563"
 });
 
 /***/ }),
@@ -4743,21 +4751,6 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
-
-/***/ }),
-
-/***/ "./resources/js/utils/index.js":
-/*!*************************************!*\
-  !*** ./resources/js/utils/index.js ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "route": () => (/* binding */ route)
-/* harmony export */ });
-var route = window.route;
 
 /***/ }),
 
@@ -4842,130 +4835,6 @@ if ($defineProperty) {
 	module.exports.apply = applyBind;
 }
 
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/svelte-loader/index.js?cssPath=/Users/braedenfoster/Documents/Dev/Laravel-Inertiajs-Template/resources/js/Components/Button.svelte.3.css!./resources/js/Components/Button.svelte":
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/svelte-loader/index.js?cssPath=/Users/braedenfoster/Documents/Dev/Laravel-Inertiajs-Template/resources/js/Components/Button.svelte.3.css!./resources/js/Components/Button.svelte ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "button.svelte-1fvcghg{border-radius:0.25rem;--tw-bg-opacity:1;background-color:rgb(156 163 175 / var(--tw-bg-opacity));padding-top:0.5rem;padding-bottom:0.5rem;padding-left:1rem;padding-right:1rem;font-weight:700;--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))\n}.active.svelte-1fvcghg{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity))\n}.active.svelte-1fvcghg:hover{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity))\n}", ""]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/svelte-loader/index.js?cssPath=/Users/braedenfoster/Documents/Dev/Laravel-Inertiajs-Template/resources/js/Components/Card.svelte.2.css!./resources/js/Components/Card.svelte":
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/svelte-loader/index.js?cssPath=/Users/braedenfoster/Documents/Dev/Laravel-Inertiajs-Template/resources/js/Components/Card.svelte.2.css!./resources/js/Components/Card.svelte ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "div.svelte-hatpp5{margin:0.75rem;display:flex;flex-direction:column;justify-content:center;border-radius:0.375rem;padding:0.75rem;--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)\n}", ""]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/api.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
-  \*****************************************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-/*
-  MIT License http://www.opensource.org/licenses/mit-license.php
-  Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-// eslint-disable-next-line func-names
-module.exports = function (cssWithMappingToString) {
-  var list = []; // return the list of modules as css string
-
-  list.toString = function toString() {
-    return this.map(function (item) {
-      var content = cssWithMappingToString(item);
-
-      if (item[2]) {
-        return "@media ".concat(item[2], " {").concat(content, "}");
-      }
-
-      return content;
-    }).join("");
-  }; // import a list of modules into the list
-  // eslint-disable-next-line func-names
-
-
-  list.i = function (modules, mediaQuery, dedupe) {
-    if (typeof modules === "string") {
-      // eslint-disable-next-line no-param-reassign
-      modules = [[null, modules, ""]];
-    }
-
-    var alreadyImportedModules = {};
-
-    if (dedupe) {
-      for (var i = 0; i < this.length; i++) {
-        // eslint-disable-next-line prefer-destructuring
-        var id = this[i][0];
-
-        if (id != null) {
-          alreadyImportedModules[id] = true;
-        }
-      }
-    }
-
-    for (var _i = 0; _i < modules.length; _i++) {
-      var item = [].concat(modules[_i]);
-
-      if (dedupe && alreadyImportedModules[item[0]]) {
-        // eslint-disable-next-line no-continue
-        continue;
-      }
-
-      if (mediaQuery) {
-        if (!item[2]) {
-          item[2] = mediaQuery;
-        } else {
-          item[2] = "".concat(mediaQuery, " and ").concat(item[2]);
-        }
-      }
-
-      list.push(item);
-    }
-  };
-
-  return list;
-};
 
 /***/ }),
 
@@ -26967,1551 +26836,11 @@ module.exports = function getSideChannel() {
 
 /***/ }),
 
-/***/ "./resources/js/Components/Button.svelte.3.css!=!./node_modules/svelte-loader/index.js?cssPath=/Users/braedenfoster/Documents/Dev/Laravel-Inertiajs-Template/resources/js/Components/Button.svelte.3.css!./resources/js/Components/Button.svelte":
-/*!*******************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./resources/js/Components/Button.svelte.3.css!=!./node_modules/svelte-loader/index.js?cssPath=/Users/braedenfoster/Documents/Dev/Laravel-Inertiajs-Template/resources/js/Components/Button.svelte.3.css!./resources/js/Components/Button.svelte ***!
-  \*******************************************************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_node_modules_svelte_loader_index_js_cssPath_Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_resources_js_Components_Button_svelte_3_css_Button_svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!../../../node_modules/svelte-loader/index.js?cssPath=/Users/braedenfoster/Documents/Dev/Laravel-Inertiajs-Template/resources/js/Components/Button.svelte.3.css!./Button.svelte */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/svelte-loader/index.js?cssPath=/Users/braedenfoster/Documents/Dev/Laravel-Inertiajs-Template/resources/js/Components/Button.svelte.3.css!./resources/js/Components/Button.svelte");
-
-            
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_node_modules_svelte_loader_index_js_cssPath_Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_resources_js_Components_Button_svelte_3_css_Button_svelte__WEBPACK_IMPORTED_MODULE_1__["default"], options);
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_node_modules_svelte_loader_index_js_cssPath_Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_resources_js_Components_Button_svelte_3_css_Button_svelte__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
-
-/***/ }),
-
-/***/ "./resources/js/Components/Card.svelte.2.css!=!./node_modules/svelte-loader/index.js?cssPath=/Users/braedenfoster/Documents/Dev/Laravel-Inertiajs-Template/resources/js/Components/Card.svelte.2.css!./resources/js/Components/Card.svelte":
-/*!*************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./resources/js/Components/Card.svelte.2.css!=!./node_modules/svelte-loader/index.js?cssPath=/Users/braedenfoster/Documents/Dev/Laravel-Inertiajs-Template/resources/js/Components/Card.svelte.2.css!./resources/js/Components/Card.svelte ***!
-  \*************************************************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_node_modules_svelte_loader_index_js_cssPath_Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_resources_js_Components_Card_svelte_2_css_Card_svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!../../../node_modules/svelte-loader/index.js?cssPath=/Users/braedenfoster/Documents/Dev/Laravel-Inertiajs-Template/resources/js/Components/Card.svelte.2.css!./Card.svelte */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./node_modules/svelte-loader/index.js?cssPath=/Users/braedenfoster/Documents/Dev/Laravel-Inertiajs-Template/resources/js/Components/Card.svelte.2.css!./resources/js/Components/Card.svelte");
-
-            
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_node_modules_svelte_loader_index_js_cssPath_Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_resources_js_Components_Card_svelte_2_css_Card_svelte__WEBPACK_IMPORTED_MODULE_1__["default"], options);
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_node_modules_svelte_loader_index_js_cssPath_Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_resources_js_Components_Card_svelte_2_css_Card_svelte__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
-  \****************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var isOldIE = function isOldIE() {
-  var memo;
-  return function memorize() {
-    if (typeof memo === 'undefined') {
-      // Test for IE <= 9 as proposed by Browserhacks
-      // @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
-      // Tests for existence of standard globals is to allow style-loader
-      // to operate correctly into non-standard environments
-      // @see https://github.com/webpack-contrib/style-loader/issues/177
-      memo = Boolean(window && document && document.all && !window.atob);
-    }
-
-    return memo;
-  };
-}();
-
-var getTarget = function getTarget() {
-  var memo = {};
-  return function memorize(target) {
-    if (typeof memo[target] === 'undefined') {
-      var styleTarget = document.querySelector(target); // Special case to return head of iframe instead of iframe itself
-
-      if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
-        try {
-          // This will throw an exception if access to iframe is blocked
-          // due to cross-origin restrictions
-          styleTarget = styleTarget.contentDocument.head;
-        } catch (e) {
-          // istanbul ignore next
-          styleTarget = null;
-        }
-      }
-
-      memo[target] = styleTarget;
-    }
-
-    return memo[target];
-  };
-}();
-
-var stylesInDom = [];
-
-function getIndexByIdentifier(identifier) {
-  var result = -1;
-
-  for (var i = 0; i < stylesInDom.length; i++) {
-    if (stylesInDom[i].identifier === identifier) {
-      result = i;
-      break;
-    }
-  }
-
-  return result;
-}
-
-function modulesToDom(list, options) {
-  var idCountMap = {};
-  var identifiers = [];
-
-  for (var i = 0; i < list.length; i++) {
-    var item = list[i];
-    var id = options.base ? item[0] + options.base : item[0];
-    var count = idCountMap[id] || 0;
-    var identifier = "".concat(id, " ").concat(count);
-    idCountMap[id] = count + 1;
-    var index = getIndexByIdentifier(identifier);
-    var obj = {
-      css: item[1],
-      media: item[2],
-      sourceMap: item[3]
-    };
-
-    if (index !== -1) {
-      stylesInDom[index].references++;
-      stylesInDom[index].updater(obj);
-    } else {
-      stylesInDom.push({
-        identifier: identifier,
-        updater: addStyle(obj, options),
-        references: 1
-      });
-    }
-
-    identifiers.push(identifier);
-  }
-
-  return identifiers;
-}
-
-function insertStyleElement(options) {
-  var style = document.createElement('style');
-  var attributes = options.attributes || {};
-
-  if (typeof attributes.nonce === 'undefined') {
-    var nonce =  true ? __webpack_require__.nc : 0;
-
-    if (nonce) {
-      attributes.nonce = nonce;
-    }
-  }
-
-  Object.keys(attributes).forEach(function (key) {
-    style.setAttribute(key, attributes[key]);
-  });
-
-  if (typeof options.insert === 'function') {
-    options.insert(style);
-  } else {
-    var target = getTarget(options.insert || 'head');
-
-    if (!target) {
-      throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");
-    }
-
-    target.appendChild(style);
-  }
-
-  return style;
-}
-
-function removeStyleElement(style) {
-  // istanbul ignore if
-  if (style.parentNode === null) {
-    return false;
-  }
-
-  style.parentNode.removeChild(style);
-}
-/* istanbul ignore next  */
-
-
-var replaceText = function replaceText() {
-  var textStore = [];
-  return function replace(index, replacement) {
-    textStore[index] = replacement;
-    return textStore.filter(Boolean).join('\n');
-  };
-}();
-
-function applyToSingletonTag(style, index, remove, obj) {
-  var css = remove ? '' : obj.media ? "@media ".concat(obj.media, " {").concat(obj.css, "}") : obj.css; // For old IE
-
-  /* istanbul ignore if  */
-
-  if (style.styleSheet) {
-    style.styleSheet.cssText = replaceText(index, css);
-  } else {
-    var cssNode = document.createTextNode(css);
-    var childNodes = style.childNodes;
-
-    if (childNodes[index]) {
-      style.removeChild(childNodes[index]);
-    }
-
-    if (childNodes.length) {
-      style.insertBefore(cssNode, childNodes[index]);
-    } else {
-      style.appendChild(cssNode);
-    }
-  }
-}
-
-function applyToTag(style, options, obj) {
-  var css = obj.css;
-  var media = obj.media;
-  var sourceMap = obj.sourceMap;
-
-  if (media) {
-    style.setAttribute('media', media);
-  } else {
-    style.removeAttribute('media');
-  }
-
-  if (sourceMap && typeof btoa !== 'undefined') {
-    css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
-  } // For old IE
-
-  /* istanbul ignore if  */
-
-
-  if (style.styleSheet) {
-    style.styleSheet.cssText = css;
-  } else {
-    while (style.firstChild) {
-      style.removeChild(style.firstChild);
-    }
-
-    style.appendChild(document.createTextNode(css));
-  }
-}
-
-var singleton = null;
-var singletonCounter = 0;
-
-function addStyle(obj, options) {
-  var style;
-  var update;
-  var remove;
-
-  if (options.singleton) {
-    var styleIndex = singletonCounter++;
-    style = singleton || (singleton = insertStyleElement(options));
-    update = applyToSingletonTag.bind(null, style, styleIndex, false);
-    remove = applyToSingletonTag.bind(null, style, styleIndex, true);
-  } else {
-    style = insertStyleElement(options);
-    update = applyToTag.bind(null, style, options);
-
-    remove = function remove() {
-      removeStyleElement(style);
-    };
-  }
-
-  update(obj);
-  return function updateStyle(newObj) {
-    if (newObj) {
-      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap) {
-        return;
-      }
-
-      update(obj = newObj);
-    } else {
-      remove();
-    }
-  };
-}
-
-module.exports = function (list, options) {
-  options = options || {}; // Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
-  // tags it will allow on a page
-
-  if (!options.singleton && typeof options.singleton !== 'boolean') {
-    options.singleton = isOldIE();
-  }
-
-  list = list || [];
-  var lastIdentifiers = modulesToDom(list, options);
-  return function update(newList) {
-    newList = newList || [];
-
-    if (Object.prototype.toString.call(newList) !== '[object Array]') {
-      return;
-    }
-
-    for (var i = 0; i < lastIdentifiers.length; i++) {
-      var identifier = lastIdentifiers[i];
-      var index = getIndexByIdentifier(identifier);
-      stylesInDom[index].references--;
-    }
-
-    var newLastIdentifiers = modulesToDom(newList, options);
-
-    for (var _i = 0; _i < lastIdentifiers.length; _i++) {
-      var _identifier = lastIdentifiers[_i];
-
-      var _index = getIndexByIdentifier(_identifier);
-
-      if (stylesInDom[_index].references === 0) {
-        stylesInDom[_index].updater();
-
-        stylesInDom.splice(_index, 1);
-      }
-    }
-
-    lastIdentifiers = newLastIdentifiers;
-  };
-};
-
-/***/ }),
-
-/***/ "./node_modules/svelte-hmr/runtime/hot-api.js":
-/*!****************************************************!*\
-  !*** ./node_modules/svelte-hmr/runtime/hot-api.js ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "makeApplyHmr": () => (/* binding */ makeApplyHmr)
-/* harmony export */ });
-/* harmony import */ var _proxy_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./proxy.js */ "./node_modules/svelte-hmr/runtime/proxy.js");
-/* eslint-env browser */
-
-
-
-const logPrefix = '[HMR:Svelte]'
-
-// eslint-disable-next-line no-console
-const log = (...args) => console.log(logPrefix, ...args)
-
-const domReload = () => {
-  // eslint-disable-next-line no-undef
-  const win = typeof window !== 'undefined' && window
-  if (win && win.location && win.location.reload) {
-    log('Reload')
-    win.location.reload()
-  } else {
-    log('Full reload required')
-  }
-}
-
-const replaceCss = (previousId, newId) => {
-  if (typeof document === 'undefined') return false
-  if (!previousId) return false
-  if (!newId) return false
-  // svelte-xxx-style => svelte-xxx
-  const previousClass = previousId.slice(0, -6)
-  const newClass = newId.slice(0, -6)
-  // eslint-disable-next-line no-undef
-  document.querySelectorAll('.' + previousClass).forEach(el => {
-    el.classList.remove(previousClass)
-    el.classList.add(newClass)
-  })
-  return true
-}
-
-const removeStylesheet = cssId => {
-  if (cssId == null) return
-  if (typeof document === 'undefined') return
-  // eslint-disable-next-line no-undef
-  const el = document.getElementById(cssId)
-  if (el) el.remove()
-  return
-}
-
-const defaultArgs = {
-  reload: domReload,
-}
-
-const makeApplyHmr = transformArgs => args => {
-  const allArgs = transformArgs({ ...defaultArgs, ...args })
-  return applyHmr(allArgs)
-}
-
-let needsReload = false
-
-function applyHmr(args) {
-  const {
-    id,
-    cssId,
-    nonCssHash,
-    reload = domReload,
-    // normalized hot API (must conform to rollup-plugin-hot)
-    hot,
-    hotOptions,
-    Component,
-    acceptable, // some types of components are impossible to HMR correctly
-    preserveLocalState,
-    ProxyAdapter,
-    emitCss,
-  } = args
-
-  const existing = hot.data && hot.data.record
-
-  const canAccept = acceptable && (!existing || existing.current.canAccept)
-
-  const r =
-    existing ||
-    (0,_proxy_js__WEBPACK_IMPORTED_MODULE_0__.createProxy)({
-      Adapter: ProxyAdapter,
-      id,
-      Component,
-      hotOptions,
-      canAccept,
-      preserveLocalState,
-    })
-
-  const cssOnly =
-    hotOptions.injectCss &&
-    existing &&
-    nonCssHash &&
-    existing.current.nonCssHash === nonCssHash
-
-  r.update({
-    Component,
-    hotOptions,
-    canAccept,
-    nonCssHash,
-    cssId,
-    previousCssId: r.current.cssId,
-    cssOnly,
-    preserveLocalState,
-  })
-
-  hot.dispose(data => {
-    // handle previous fatal errors
-    if (needsReload || (0,_proxy_js__WEBPACK_IMPORTED_MODULE_0__.hasFatalError)()) {
-      if (hotOptions && hotOptions.noReload) {
-        log('Full reload required')
-      } else {
-        reload()
-      }
-    }
-
-    // 2020-09-21 Snowpack master doesn't pass data as arg to dispose handler
-    data = data || hot.data
-
-    data.record = r
-
-    if (!emitCss && cssId && r.current.cssId !== cssId) {
-      if (hotOptions.cssEjectDelay) {
-        setTimeout(() => removeStylesheet(cssId), hotOptions.cssEjectDelay)
-      } else {
-        removeStylesheet(cssId)
-      }
-    }
-  })
-
-  if (canAccept) {
-    hot.accept(async arg => {
-      const { bubbled } = arg || {}
-
-      // NOTE Snowpack registers accept handlers only once, so we can NOT rely
-      // on the surrounding scope variables -- they're not the last version!
-      const { cssId: newCssId, previousCssId } = r.current
-      const cssChanged = newCssId !== previousCssId
-      // ensure old style sheet has been removed by now
-      if (!emitCss && cssChanged) removeStylesheet(previousCssId)
-      // guard: css only change
-      if (
-        // NOTE bubbled is provided only by rollup-plugin-hot, and we
-        // can't safely assume a CSS only change without it... this means we
-        // can't support CSS only injection with Nollup or Webpack currently
-        bubbled === false && // WARNING check false, not falsy!
-        r.current.cssOnly &&
-        (!cssChanged || replaceCss(previousCssId, newCssId))
-      ) {
-        return
-      }
-
-      const success = await r.reload()
-
-      if ((0,_proxy_js__WEBPACK_IMPORTED_MODULE_0__.hasFatalError)() || (!success && !hotOptions.optimistic)) {
-        needsReload = true
-      }
-    })
-  }
-
-  // well, endgame... we won't be able to render next updates, even successful,
-  // if we don't have proxies in svelte's tree
-  //
-  // since we won't return the proxy and the app will expect a svelte component,
-  // it's gonna crash... so it's best to report the real cause
-  //
-  // full reload required
-  //
-  const proxyOk = r && r.proxy
-  if (!proxyOk) {
-    throw new Error(`Failed to create HMR proxy for Svelte component ${id}`)
-  }
-
-  return r.proxy
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/svelte-hmr/runtime/index.js":
-/*!**************************************************!*\
-  !*** ./node_modules/svelte-hmr/runtime/index.js ***!
-  \**************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "makeApplyHmr": () => (/* reexport safe */ _hot_api_js__WEBPACK_IMPORTED_MODULE_0__.makeApplyHmr)
-/* harmony export */ });
-/* harmony import */ var _hot_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hot-api.js */ "./node_modules/svelte-hmr/runtime/hot-api.js");
-
-
-
-/***/ }),
-
-/***/ "./node_modules/svelte-hmr/runtime/overlay.js":
-/*!****************************************************!*\
-  !*** ./node_modules/svelte-hmr/runtime/overlay.js ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* eslint-env browser */
-
-const removeElement = el => el && el.parentNode && el.parentNode.removeChild(el)
-
-const ErrorOverlay = () => {
-  let errors = []
-  let compileError = null
-
-  const errorsTitle = 'Failed to init component'
-  const compileErrorTitle = 'Failed to compile'
-
-  const style = {
-    section: `
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 32px;
-      background: rgba(0, 0, 0, .85);
-      font-family: Menlo, Consolas, monospace;
-      font-size: large;
-      color: rgb(232, 232, 232);
-      overflow: auto;
-      z-index: 2147483647;
-    `,
-    h1: `
-      margin-top: 0;
-      color: #E36049;
-      font-size: large;
-      font-weight: normal;
-    `,
-    h2: `
-      margin: 32px 0 0;
-      font-size: large;
-      font-weight: normal;
-    `,
-    pre: ``,
-  }
-
-  const createOverlay = () => {
-    const h1 = document.createElement('h1')
-    h1.style = style.h1
-    const section = document.createElement('section')
-    section.appendChild(h1)
-    section.style = style.section
-    const body = document.createElement('div')
-    section.appendChild(body)
-    return { h1, el: section, body }
-  }
-
-  const setTitle = title => {
-    overlay.h1.textContent = title
-  }
-
-  const show = () => {
-    const { el } = overlay
-    if (!el.parentNode) {
-      const target = document.body
-      target.appendChild(overlay.el)
-    }
-  }
-
-  const hide = () => {
-    const { el } = overlay
-    if (el.parentNode) {
-      overlay.el.remove()
-    }
-  }
-
-  const update = () => {
-    if (compileError) {
-      overlay.body.innerHTML = ''
-      setTitle(compileErrorTitle)
-      const errorEl = renderError(compileError)
-      overlay.body.appendChild(errorEl)
-      show()
-    } else if (errors.length > 0) {
-      overlay.body.innerHTML = ''
-      setTitle(errorsTitle)
-      errors.forEach(({ title, message }) => {
-        const errorEl = renderError(message, title)
-        overlay.body.appendChild(errorEl)
-      })
-      show()
-    } else {
-      hide()
-    }
-  }
-
-  const renderError = (message, title) => {
-    const div = document.createElement('div')
-    if (title) {
-      const h2 = document.createElement('h2')
-      h2.textContent = title
-      h2.style = style.h2
-      div.appendChild(h2)
-    }
-    const pre = document.createElement('pre')
-    pre.textContent = message
-    div.appendChild(pre)
-    return div
-  }
-
-  const addError = (error, title) => {
-    const message = (error && error.stack) || error
-    errors.push({ title, message })
-    update()
-  }
-
-  const clearErrors = () => {
-    errors.forEach(({ element }) => {
-      removeElement(element)
-    })
-    errors = []
-    update()
-  }
-
-  const setCompileError = message => {
-    compileError = message
-    update()
-  }
-
-  const overlay = createOverlay()
-
-  return {
-    addError,
-    clearErrors,
-    setCompileError,
-  }
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ErrorOverlay);
-
-
-/***/ }),
-
-/***/ "./node_modules/svelte-hmr/runtime/proxy-adapter-dom.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/svelte-hmr/runtime/proxy-adapter-dom.js ***!
-  \**************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "adapter": () => (/* binding */ adapter),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var _overlay_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./overlay.js */ "./node_modules/svelte-hmr/runtime/overlay.js");
-/* global window, document */
-
-// NOTE from 3.38.3 (or so), insert was carrying the hydration logic, that must
-// be used because DOM elements are reused more (and so insertion points are not
-// necessarily added in order); then in 3.40 the logic was moved to
-// insert_hydration, which is the one we must use for HMR
-const svelteInsert = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert_hydration || svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert
-if (!svelteInsert) {
-  throw new Error(
-    'failed to find insert_hydration and insert in svelte/internal'
-  )
-}
-
-
-
-const removeElement = el => el && el.parentNode && el.parentNode.removeChild(el)
-
-const adapter = class ProxyAdapterDom {
-  constructor(instance) {
-    this.instance = instance
-    this.insertionPoint = null
-
-    this.afterMount = this.afterMount.bind(this)
-    this.rerender = this.rerender.bind(this)
-
-    this._noOverlay = !!instance.hotOptions.noOverlay
-  }
-
-  // NOTE overlay is only created before being actually shown to help test
-  // runner (it won't have to account for error overlay when running assertions
-  // about the contents of the rendered page)
-  static getErrorOverlay(noCreate = false) {
-    if (!noCreate && !this.errorOverlay) {
-      this.errorOverlay = (0,_overlay_js__WEBPACK_IMPORTED_MODULE_1__["default"])()
-    }
-    return this.errorOverlay
-  }
-
-  // TODO this is probably unused now: remove in next breaking release
-  static renderCompileError(message) {
-    const noCreate = !message
-    const overlay = this.getErrorOverlay(noCreate)
-    if (!overlay) return
-    overlay.setCompileError(message)
-  }
-
-  dispose() {
-    // Component is being destroyed, detaching is not optional in Svelte3's
-    // component API, so we can dispose of the insertion point in every case.
-    if (this.insertionPoint) {
-      removeElement(this.insertionPoint)
-      this.insertionPoint = null
-    }
-    this.clearError()
-  }
-
-  // NOTE afterMount CAN be called multiple times (e.g. keyed list)
-  afterMount(target, anchor) {
-    const {
-      instance: { debugName },
-    } = this
-    if (!this.insertionPoint) {
-      this.insertionPoint = document.createComment(debugName)
-    }
-    svelteInsert(target, this.insertionPoint, anchor)
-  }
-
-  rerender() {
-    this.clearError()
-    const {
-      instance: { refreshComponent },
-      insertionPoint,
-    } = this
-    if (!insertionPoint) {
-      throw new Error('Cannot rerender: missing insertion point')
-    }
-    refreshComponent(insertionPoint.parentNode, insertionPoint)
-  }
-
-  renderError(err) {
-    if (this._noOverlay) return
-    const {
-      instance: { debugName },
-    } = this
-    const title = debugName || err.moduleName || 'Error'
-    this.constructor.getErrorOverlay().addError(err, title)
-  }
-
-  clearError() {
-    if (this._noOverlay) return
-    const overlay = this.constructor.getErrorOverlay(true)
-    if (!overlay) return
-    overlay.clearErrors()
-  }
-}
-
-// TODO this is probably unused now: remove in next breaking release
-if (typeof window !== 'undefined') {
-  window.__SVELTE_HMR_ADAPTER = adapter
-}
-
-// mitigate situation with Snowpack remote source pulling latest of runtime,
-// but using previous version of the Node code transform in the plugin
-// see: https://github.com/rixo/svelte-hmr/issues/27
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (adapter);
-
-
-/***/ }),
-
-/***/ "./node_modules/svelte-hmr/runtime/proxy.js":
-/*!**************************************************!*\
-  !*** ./node_modules/svelte-hmr/runtime/proxy.js ***!
-  \**************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "hasFatalError": () => (/* binding */ hasFatalError),
-/* harmony export */   "createProxy": () => (/* binding */ createProxy)
-/* harmony export */ });
-/* harmony import */ var _svelte_hooks_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./svelte-hooks.js */ "./node_modules/svelte-hmr/runtime/svelte-hooks.js");
-/* eslint-env browser */
-/**
- * The HMR proxy is a component-like object whose task is to sit in the
- * component tree in place of the proxied component, and rerender each
- * successive versions of said component.
- */
-
-
-
-const handledMethods = ['constructor', '$destroy']
-const forwardedMethods = ['$set', '$on']
-
-const logError = (msg, err) => {
-  // eslint-disable-next-line no-console
-  console.error('[HMR][Svelte]', msg)
-  if (err) {
-    // NOTE avoid too much wrapping around user errors
-    // eslint-disable-next-line no-console
-    console.error(err)
-  }
-}
-
-const posixify = file => file.replace(/[/\\]/g, '/')
-
-const getBaseName = id =>
-  id
-    .split('/')
-    .pop()
-    .split('.')
-    .slice(0, -1)
-    .join('.')
-
-const capitalize = str => str[0].toUpperCase() + str.slice(1)
-
-const getFriendlyName = id => capitalize(getBaseName(posixify(id)))
-
-const getDebugName = id => `<${getFriendlyName(id)}>`
-
-const relayCalls = (getTarget, names, dest = {}) => {
-  for (const key of names) {
-    dest[key] = function(...args) {
-      const target = getTarget()
-      if (!target) {
-        return
-      }
-      return target[key] && target[key].call(this, ...args)
-    }
-  }
-  return dest
-}
-
-const isInternal = key => key !== '$$' && key.substr(0, 2) === '$$'
-
-// This is intented as a somewhat generic / prospective fix to the situation
-// that arised with the introduction of $$set in Svelte 3.24.1 -- trying to
-// avoid giving full knowledge (like its name) of this implementation detail
-// to the proxy. The $$set method can be present or not on the component, and
-// its presence impacts the behaviour (but with HMR it will be tested if it is
-// present _on the proxy_). So the idea here is to expose exactly the same $$
-// props as the current version of the component and, for those that are
-// functions, proxy the calls to the current component.
-const relayInternalMethods = (proxy, cmp) => {
-  // delete any previously added $$ prop
-  Object.keys(proxy)
-    .filter(isInternal)
-    .forEach(key => {
-      delete proxy[key]
-    })
-  // guard: no component
-  if (!cmp) return
-  // proxy current $$ props to the actual component
-  Object.keys(cmp)
-    .filter(isInternal)
-    .forEach(key => {
-      Object.defineProperty(proxy, key, {
-        configurable: true,
-        get() {
-          const value = cmp[key]
-          if (typeof value !== 'function') return value
-          return (
-            value &&
-            function(...args) {
-              return value.apply(this, args)
-            }
-          )
-        },
-      })
-    })
-}
-
-const copyComponentProperties = (proxy, cmp, previous) => {
-  //proxy custom methods
-  const props = Object.getOwnPropertyNames(Object.getPrototypeOf(cmp))
-  if (previous) {
-    previous.forEach(prop => {
-      delete proxy[prop]
-    })
-  }
-  return props.filter(prop => {
-    if (!handledMethods.includes(prop) && !forwardedMethods.includes(prop)) {
-      Object.defineProperty(proxy, prop, {
-        configurable: true,
-        get() {
-          return cmp[prop]
-        },
-        set(value) {
-          // we're changing it on the real component first to see what it
-          // gives... if it throws an error, we want to throw the same error in
-          // order to most closely follow non-hmr behaviour.
-          cmp[prop] = value
-        },
-      })
-      return true
-    }
-  })
-}
-
-// everything in the constructor!
-//
-// so we don't polute the component class with new members
-//
-class ProxyComponent {
-  constructor(
-    {
-      Adapter,
-      id,
-      debugName,
-      current, // { Component, hotOptions: { preserveLocalState, ... } }
-      register,
-    },
-    options // { target, anchor, ... }
-  ) {
-    let cmp
-    let disposed = false
-    let lastError = null
-
-    const setComponent = _cmp => {
-      cmp = _cmp
-      relayInternalMethods(this, cmp)
-    }
-
-    const getComponent = () => cmp
-
-    const destroyComponent = () => {
-      // destroyComponent is tolerant (don't crash on no cmp) because it
-      // is possible that reload/rerender is called after a previous
-      // createComponent has failed (hence we have a proxy, but no cmp)
-      if (cmp) {
-        cmp.$destroy()
-        setComponent(null)
-      }
-    }
-
-    const refreshComponent = (target, anchor, conservativeDestroy) => {
-      if (lastError) {
-        lastError = null
-        adapter.rerender()
-      } else {
-        try {
-          const replaceOptions = {
-            target,
-            anchor,
-            preserveLocalState: current.preserveLocalState,
-          }
-          if (conservativeDestroy) {
-            replaceOptions.conservativeDestroy = true
-          }
-          setComponent(cmp.$replace(current.Component, replaceOptions))
-        } catch (err) {
-          setError(err, target, anchor)
-          if (
-            !current.hotOptions.optimistic ||
-            // non acceptable components (that is components that have to defer
-            // to their parent for rerender -- e.g. accessors, named exports)
-            // are most tricky, and they havent been considered when most of the
-            // code has been written... as a result, they are especially tricky
-            // to deal with, it's better to consider any error with them to be
-            // fatal to avoid odities
-            !current.canAccept ||
-            (err && err.hmrFatal)
-          ) {
-            throw err
-          } else {
-            // const errString = String((err && err.stack) || err)
-            logError(`Error during component init: ${debugName}`, err)
-          }
-        }
-      }
-    }
-
-    const setError = err => {
-      lastError = err
-      adapter.renderError(err)
-    }
-
-    const instance = {
-      hotOptions: current.hotOptions,
-      proxy: this,
-      id,
-      debugName,
-      refreshComponent,
-    }
-
-    const adapter = new Adapter(instance)
-
-    const { afterMount, rerender } = adapter
-
-    // $destroy is not called when a child component is disposed, so we
-    // need to hook from fragment.
-    const onDestroy = () => {
-      // NOTE do NOT call $destroy on the cmp from here; the cmp is already
-      //   dead, this would not work
-      if (!disposed) {
-        disposed = true
-        adapter.dispose()
-        unregister()
-      }
-    }
-
-    // ---- register proxy instance ----
-
-    const unregister = register(rerender)
-
-    // ---- augmented methods ----
-
-    this.$destroy = () => {
-      destroyComponent()
-      onDestroy()
-    }
-
-    // ---- forwarded methods ----
-
-    relayCalls(getComponent, forwardedMethods, this)
-
-    // ---- create & mount target component instance ---
-
-    try {
-      let lastProperties
-      const _cmp = (0,_svelte_hooks_js__WEBPACK_IMPORTED_MODULE_0__.createProxiedComponent)(current.Component, options, {
-        allowLiveBinding: current.hotOptions.allowLiveBinding,
-        onDestroy,
-        onMount: afterMount,
-        onInstance: comp => {
-          // WARNING the proxy MUST use the same $$ object as its component
-          // instance, because a lot of wiring happens during component
-          // initialisation... lots of references to $$ and $$.fragment have
-          // already been distributed around when the component constructor
-          // returns, before we have a chance to wrap them (and so we can't
-          // wrap them no more, because existing references would become
-          // invalid)
-          this.$$ = comp.$$
-          lastProperties = copyComponentProperties(this, comp, lastProperties)
-        },
-      })
-      setComponent(_cmp)
-    } catch (err) {
-      const { target, anchor } = options
-      setError(err, target, anchor)
-      throw err
-    }
-  }
-}
-
-const syncStatics = (component, proxy, previousKeys) => {
-  // remove previously copied keys
-  if (previousKeys) {
-    for (const key of previousKeys) {
-      delete proxy[key]
-    }
-  }
-
-  // forward static properties and methods
-  const keys = []
-  for (const key in component) {
-    keys.push(key)
-    proxy[key] = component[key]
-  }
-
-  return keys
-}
-
-const globalListeners = {}
-
-const onGlobal = (event, fn) => {
-  event = event.toLowerCase()
-  if (!globalListeners[event]) globalListeners[event] = []
-  globalListeners[event].push(fn)
-}
-
-const fireGlobal = (event, ...args) => {
-  const listeners = globalListeners[event]
-  if (!listeners) return
-  for (const fn of listeners) {
-    fn(...args)
-  }
-}
-
-const fireBeforeUpdate = () => fireGlobal('beforeupdate')
-
-const fireAfterUpdate = () => fireGlobal('afterupdate')
-
-if (typeof window !== 'undefined') {
-  window.__SVELTE_HMR = {
-    on: onGlobal,
-  }
-  window.dispatchEvent(new CustomEvent('svelte-hmr:ready'))
-}
-
-let fatalError = false
-
-const hasFatalError = () => fatalError
-
-/**
- * Creates a HMR proxy and its associated `reload` function that pushes a new
- * version to all existing instances of the component.
- */
-function createProxy({
-  Adapter,
-  id,
-  Component,
-  hotOptions,
-  canAccept,
-  preserveLocalState,
-}) {
-  const debugName = getDebugName(id)
-  const instances = []
-
-  // current object will be updated, proxy instances will keep a ref
-  const current = {
-    Component,
-    hotOptions,
-    canAccept,
-    preserveLocalState,
-  }
-
-  const name = `Proxy${debugName}`
-
-  // this trick gives the dynamic name Proxy<MyComponent> to the concrete
-  // proxy class... unfortunately, this doesn't shows in dev tools, but
-  // it stills allow to inspect cmp.constructor.name to confirm an instance
-  // is a proxy
-  const proxy = {
-    [name]: class extends ProxyComponent {
-      constructor(options) {
-        try {
-          super(
-            {
-              Adapter,
-              id,
-              debugName,
-              current,
-              register: rerender => {
-                instances.push(rerender)
-                const unregister = () => {
-                  const i = instances.indexOf(rerender)
-                  instances.splice(i, 1)
-                }
-                return unregister
-              },
-            },
-            options
-          )
-        } catch (err) {
-          // If we fail to create a proxy instance, any instance, that means
-          // that we won't be able to fix this instance when it is updated.
-          // Recovering to normal state will be impossible. HMR's dead.
-          //
-          // Fatal error will trigger a full reload on next update (reloading
-          // right now is kinda pointless since buggy code still exists).
-          //
-          // NOTE Only report first error to avoid too much polution -- following
-          // errors are probably caused by the first one, or they will show up
-          // in turn when the first one is fixed ¯\_(ツ)_/¯
-          //
-          if (!fatalError) {
-            fatalError = true
-            logError(
-              `Unrecoverable error in ${debugName}: next update will trigger a ` +
-                `full reload`
-            )
-          }
-          throw err
-        }
-      }
-    },
-  }[name]
-
-  // initialize static members
-  let previousStatics = syncStatics(current.Component, proxy)
-
-  const update = newState => Object.assign(current, newState)
-
-  // reload all existing instances of this component
-  const reload = () => {
-    fireBeforeUpdate()
-
-    // copy statics before doing anything because a static prop/method
-    // could be used somewhere in the create/render call
-    previousStatics = syncStatics(current.Component, proxy, previousStatics)
-
-    const errors = []
-
-    instances.forEach(rerender => {
-      try {
-        rerender()
-      } catch (err) {
-        logError(`Failed to rerender ${debugName}`, err)
-        errors.push(err)
-      }
-    })
-
-    if (errors.length > 0) {
-      return false
-    }
-
-    fireAfterUpdate()
-
-    return true
-  }
-
-  const hasFatalError = () => fatalError
-
-  return { id, proxy, update, reload, hasFatalError, current }
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/svelte-hmr/runtime/svelte-hooks.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/svelte-hmr/runtime/svelte-hooks.js ***!
-  \*********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "createProxiedComponent": () => (/* binding */ createProxiedComponent)
-/* harmony export */ });
-/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/**
- * Emulates forthcoming HMR hooks in Svelte.
- *
- * All references to private component state ($$) are now isolated in this
- * module.
- */
-
-
-const captureState = cmp => {
-  // sanity check: propper behaviour here is to crash noisily so that
-  // user knows that they're looking at something broken
-  if (!cmp) {
-    throw new Error('Missing component')
-  }
-  if (!cmp.$$) {
-    throw new Error('Invalid component')
-  }
-
-  const {
-    $$: { callbacks, bound, ctx },
-  } = cmp
-
-  const state = cmp.$capture_state()
-
-  // capturing current value of props (or we'll recreate the component with the
-  // initial prop values, that may have changed -- and would not be reflected in
-  // options.props)
-  const props = Object.assign({}, cmp.$$.props)
-  Object.keys(cmp.$$.props).forEach(prop => {
-    props[prop] = ctx[props[prop]]
-  })
-
-  return { ctx, callbacks, bound, state, props }
-}
-
-// restoreState
-//
-// It is too late to restore context at this point because component instance
-// function has already been called (and so context has already been read).
-// Instead, we rely on setting current_component to the same value it has when
-// the component was first rendered -- which fix support for context, and is
-// also generally more respectful of normal operation.
-//
-const restoreState = (cmp, restore) => {
-  if (!restore) {
-    return
-  }
-  const { callbacks, bound } = restore
-  if (callbacks) {
-    cmp.$$.callbacks = callbacks
-  }
-  if (bound) {
-    cmp.$$.bound = bound
-  }
-  // props, props.$$slots are restored at component creation (works
-  // better -- well, at all actually)
-}
-
-const get_current_component_safe = () => {
-  // NOTE relying on dynamic bindings (current_component) makes us dependent on
-  // bundler config (and apparently it does not work in demo-svelte-nollup)
-  try {
-    // unfortunately, unlike current_component, get_current_component() can
-    // crash in the normal path (when there is really no parent)
-    return (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.get_current_component)()
-  } catch (err) {
-    // ... so we need to consider that this error means that there is no parent
-    //
-    // that makes us tightly coupled to the error message but, at least, we
-    // won't mute an unexpected error, which is quite a horrible thing to do
-    if (err.message === 'Function called outside component initialization') {
-      // who knows...
-      return svelte_internal__WEBPACK_IMPORTED_MODULE_0__.current_component
-    } else {
-      throw err
-    }
-  }
-}
-
-const createProxiedComponent = (
-  Component,
-  initialOptions,
-  { allowLiveBinding, onInstance, onMount, onDestroy }
-) => {
-  let cmp
-  let options = initialOptions
-
-  const isCurrent = _cmp => cmp === _cmp
-
-  const assignOptions = (target, anchor, restore, preserveLocalState) => {
-    const props = Object.assign({}, options.props)
-
-    // Filtering props to avoid "unexpected prop" warning
-    // NOTE this is based on props present in initial options, but it should
-    //      always works, because props that are passed from the parent can't
-    //      change without a code change to the parent itself -- hence, the
-    //      child component will be fully recreated, and initial options should
-    //      always represent props that are currnetly passed by the parent
-    if (options.props && restore.props) {
-      for (const prop of Object.keys(options.props)) {
-        if (restore.props.hasOwnProperty(prop)) {
-          props[prop] = restore.props[prop]
-        }
-      }
-    }
-
-    if (preserveLocalState && restore.state) {
-      if (Array.isArray(preserveLocalState)) {
-        // form ['a', 'b'] => preserve only 'a' and 'b'
-        props.$$inject = {}
-        for (const key of preserveLocalState) {
-          props.$$inject[key] = restore.state[key]
-        }
-      } else {
-        props.$$inject = restore.state
-      }
-    } else {
-      delete props.$$inject
-    }
-    options = Object.assign({}, initialOptions, {
-      target,
-      anchor,
-      props,
-      hydrate: false,
-    })
-  }
-
-  const instrument = targetCmp => {
-    const createComponent = (Component, restore, previousCmp) => {
-      ;(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_current_component)(parentComponent || previousCmp)
-      const comp = new Component(options)
-      restoreState(comp, restore)
-      instrument(comp)
-      return comp
-    }
-
-    targetCmp.$$.on_hmr = []
-
-    // `conservative: true` means we want to be sure that the new component has
-    // actually been successfuly created before destroying the old instance.
-    // This could be useful for preventing runtime errors in component init to
-    // bring down the whole HMR. Unfortunately the implementation bellow is
-    // broken (FIXME), but that remains an interesting target for when HMR hooks
-    // will actually land in Svelte itself.
-    //
-    // The goal would be to render an error inplace in case of error, to avoid
-    // losing the navigation stack (especially annoying in native, that is not
-    // based on URL navigation, so we lose the current page on each error).
-    //
-    targetCmp.$replace = (
-      Component,
-      {
-        target = options.target,
-        anchor = options.anchor,
-        preserveLocalState,
-        conservative = false,
-      }
-    ) => {
-      const restore = captureState(targetCmp)
-      assignOptions(
-        target || options.target,
-        anchor,
-        restore,
-        preserveLocalState
-      )
-
-      const callbacks = cmp.$$.on_hmr
-
-      const afterCallbacks = callbacks.map(fn => fn(cmp)).filter(Boolean)
-
-      const previous = cmp
-      if (conservative) {
-        try {
-          const next = createComponent(Component, restore, previous)
-          // prevents on_destroy from firing on non-final cmp instance
-          cmp = null
-          previous.$destroy()
-          cmp = next
-        } catch (err) {
-          cmp = previous
-          throw err
-        }
-      } else {
-        // prevents on_destroy from firing on non-final cmp instance
-        cmp = null
-        if (previous) {
-          // previous can be null if last constructor has crashed
-          previous.$destroy()
-        }
-        cmp = createComponent(Component, restore, cmp)
-      }
-
-      cmp.$$.hmr_cmp = cmp
-
-      for (const fn of afterCallbacks) {
-        fn(cmp)
-      }
-
-      cmp.$$.on_hmr = callbacks
-
-      return cmp
-    }
-
-    // NOTE onMount must provide target & anchor (for us to be able to determinate
-    // 			actual DOM insertion point)
-    //
-    // 			And also, to support keyed list, it needs to be called each time the
-    // 			component is moved (same as $$.fragment.m)
-    if (onMount) {
-      const m = targetCmp.$$.fragment.m
-      targetCmp.$$.fragment.m = (...args) => {
-        const result = m(...args)
-        onMount(...args)
-        return result
-      }
-    }
-
-    // NOTE onDestroy must be called even if the call doesn't pass through the
-    //      component's $destroy method (that we can hook onto by ourselves, since
-    //      it's public API) -- this happens a lot in svelte's internals, that
-    //      manipulates cmp.$$.fragment directly, often binding to fragment.d,
-    //      for example
-    if (onDestroy) {
-      targetCmp.$$.on_destroy.push(() => {
-        if (isCurrent(targetCmp)) {
-          onDestroy()
-        }
-      })
-    }
-
-    if (onInstance) {
-      onInstance(targetCmp)
-    }
-
-    // Svelte 3 creates and mount components from their constructor if
-    // options.target is present.
-    //
-    // This means that at this point, the component's `fragment.c` and,
-    // most notably, `fragment.m` will already have been called _from inside
-    // createComponent_. That is: before we have a chance to hook on it.
-    //
-    // Proxy's constructor
-    //   -> createComponent
-    //     -> component constructor
-    //       -> component.$$.fragment.c(...) (or l, if hydrate:true)
-    //       -> component.$$.fragment.m(...)
-    //
-    //   -> you are here <-
-    //
-    if (onMount) {
-      const { target, anchor } = options
-      if (target) {
-        onMount(target, anchor)
-      }
-    }
-  }
-
-  const parentComponent = allowLiveBinding
-    ? svelte_internal__WEBPACK_IMPORTED_MODULE_0__.current_component
-    : get_current_component_safe()
-
-  cmp = new Component(options)
-  cmp.$$.hmr_cmp = cmp
-
-  instrument(cmp)
-
-  return cmp
-}
-
-
-/***/ }),
-
 /***/ "./node_modules/@inertiajs/inertia-svelte/src/App.svelte":
 /*!***************************************************************!*\
   !*** ./node_modules/@inertiajs/inertia-svelte/src/App.svelte ***!
   \***************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -28522,9 +26851,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./store */ "./node_modules/@inertiajs/inertia-svelte/src/store.js");
 /* harmony import */ var _Render_svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Render.svelte */ "./node_modules/@inertiajs/inertia-svelte/src/Render.svelte");
 /* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
-/* harmony import */ var _Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_node_modules_svelte_loader_lib_hot_api_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/svelte-loader/lib/hot-api.js */ "./node_modules/svelte-loader/lib/hot-api.js");
-/* harmony import */ var _Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_node_modules_svelte_hmr_runtime_proxy_adapter_dom_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/svelte-hmr/runtime/proxy-adapter-dom.js */ "./node_modules/svelte-hmr/runtime/proxy-adapter-dom.js");
-/* module decorator */ module = __webpack_require__.hmd(module);
 /* node_modules/@inertiajs/inertia-svelte/src/App.svelte generated by Svelte v3.46.4 */
 
 
@@ -28627,10 +26953,7 @@ class App extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
 	}
 }
 
-if (module && module.hot) {}
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
-
-
 
 /***/ }),
 
@@ -28638,7 +26961,7 @@ if (module && module.hot) {}
 /*!***********************************************************************!*\
   !*** ./node_modules/@inertiajs/inertia-svelte/src/InertiaLink.svelte ***!
   \***********************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -28648,9 +26971,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
-/* harmony import */ var _Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_node_modules_svelte_loader_lib_hot_api_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/svelte-loader/lib/hot-api.js */ "./node_modules/svelte-loader/lib/hot-api.js");
-/* harmony import */ var _Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_node_modules_svelte_hmr_runtime_proxy_adapter_dom_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/svelte-hmr/runtime/proxy-adapter-dom.js */ "./node_modules/svelte-hmr/runtime/proxy-adapter-dom.js");
-/* module decorator */ module = __webpack_require__.hmd(module);
 /* node_modules/@inertiajs/inertia-svelte/src/InertiaLink.svelte generated by Svelte v3.46.4 */
 
 
@@ -28819,10 +27139,7 @@ class InertiaLink extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteCom
 	}
 }
 
-if (module && module.hot) {}
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (InertiaLink);
-
-
 
 /***/ }),
 
@@ -28830,7 +27147,7 @@ if (module && module.hot) {}
 /*!******************************************************************!*\
   !*** ./node_modules/@inertiajs/inertia-svelte/src/Render.svelte ***!
   \******************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -28840,9 +27157,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./store */ "./node_modules/@inertiajs/inertia-svelte/src/store.js");
-/* harmony import */ var _Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_node_modules_svelte_loader_lib_hot_api_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/svelte-loader/lib/hot-api.js */ "./node_modules/svelte-loader/lib/hot-api.js");
-/* harmony import */ var _Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_node_modules_svelte_hmr_runtime_proxy_adapter_dom_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/svelte-hmr/runtime/proxy-adapter-dom.js */ "./node_modules/svelte-hmr/runtime/proxy-adapter-dom.js");
-/* module decorator */ module = __webpack_require__.hmd(module);
 /* node_modules/@inertiajs/inertia-svelte/src/Render.svelte generated by Svelte v3.46.4 */
 
 
@@ -29148,19 +27462,16 @@ class Render extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponen
 	}
 }
 
-if (module && module.hot) {}
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Render);
-
-
 
 
 /***/ }),
 
-/***/ "./resources/js/Components/Button.svelte":
-/*!***********************************************!*\
-  !*** ./resources/js/Components/Button.svelte ***!
-  \***********************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ "./resources/js/Components/ApplicationLogo.svelte":
+/*!********************************************************!*\
+  !*** ./resources/js/Components/ApplicationLogo.svelte ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -29168,16 +27479,79 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var _Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_node_modules_svelte_loader_lib_hot_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/svelte-loader/lib/hot-api.js */ "./node_modules/svelte-loader/lib/hot-api.js");
-/* harmony import */ var _Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_node_modules_svelte_hmr_runtime_proxy_adapter_dom_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/svelte-hmr/runtime/proxy-adapter-dom.js */ "./node_modules/svelte-hmr/runtime/proxy-adapter-dom.js");
-/* harmony import */ var _Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_resources_js_Components_Button_svelte_3_css_svelte_loader_cssPath_Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_resources_js_Components_Button_svelte_3_css_Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_resources_js_Components_Button_svelte__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./resources/js/Components/Button.svelte.3.css!=!svelte-loader?cssPath=/Users/braedenfoster/Documents/Dev/Laravel-Inertiajs-Template/resources/js/Components/Button.svelte.3.css!./resources/js/Components/Button.svelte */ "./resources/js/Components/Button.svelte.3.css!=!./node_modules/svelte-loader/index.js?cssPath=/Users/braedenfoster/Documents/Dev/Laravel-Inertiajs-Template/resources/js/Components/Button.svelte.3.css!./resources/js/Components/Button.svelte");
-/* module decorator */ module = __webpack_require__.hmd(module);
+/* resources/js/Components/ApplicationLogo.svelte generated by Svelte v3.46.4 */
+
+
+function create_fragment(ctx) {
+	let svg;
+	let path;
+	let svg_class_value;
+
+	return {
+		c() {
+			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
+			path = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path, "d", "M305.8 81.125C305.77 80.995 305.69 80.885 305.65 80.755C305.56 80.525 305.49 80.285 305.37 80.075C305.29 79.935 305.17 79.815 305.07 79.685C304.94 79.515 304.83 79.325 304.68 79.175C304.55 79.045 304.39 78.955 304.25 78.845C304.09 78.715 303.95 78.575 303.77 78.475L251.32 48.275C249.97 47.495 248.31 47.495 246.96 48.275L194.51 78.475C194.33 78.575 194.19 78.725 194.03 78.845C193.89 78.955 193.73 79.045 193.6 79.175C193.45 79.325 193.34 79.515 193.21 79.685C193.11 79.815 192.99 79.935 192.91 80.075C192.79 80.285 192.71 80.525 192.63 80.755C192.58 80.875 192.51 80.995 192.48 81.125C192.38 81.495 192.33 81.875 192.33 82.265V139.625L148.62 164.795V52.575C148.62 52.185 148.57 51.805 148.47 51.435C148.44 51.305 148.36 51.195 148.32 51.065C148.23 50.835 148.16 50.595 148.04 50.385C147.96 50.245 147.84 50.125 147.74 49.995C147.61 49.825 147.5 49.635 147.35 49.485C147.22 49.355 147.06 49.265 146.92 49.155C146.76 49.025 146.62 48.885 146.44 48.785L93.99 18.585C92.64 17.805 90.98 17.805 89.63 18.585L37.18 48.785C37 48.885 36.86 49.035 36.7 49.155C36.56 49.265 36.4 49.355 36.27 49.485C36.12 49.635 36.01 49.825 35.88 49.995C35.78 50.125 35.66 50.245 35.58 50.385C35.46 50.595 35.38 50.835 35.3 51.065C35.25 51.185 35.18 51.305 35.15 51.435C35.05 51.805 35 52.185 35 52.575V232.235C35 233.795 35.84 235.245 37.19 236.025L142.1 296.425C142.33 296.555 142.58 296.635 142.82 296.725C142.93 296.765 143.04 296.835 143.16 296.865C143.53 296.965 143.9 297.015 144.28 297.015C144.66 297.015 145.03 296.965 145.4 296.865C145.5 296.835 145.59 296.775 145.69 296.745C145.95 296.655 146.21 296.565 146.45 296.435L251.36 236.035C252.72 235.255 253.55 233.815 253.55 232.245V174.885L303.81 145.945C305.17 145.165 306 143.725 306 142.155V82.265C305.95 81.875 305.89 81.495 305.8 81.125ZM144.2 227.205L100.57 202.515L146.39 176.135L196.66 147.195L240.33 172.335L208.29 190.625L144.2 227.205ZM244.75 114.995V164.795L226.39 154.225L201.03 139.625V89.825L219.39 100.395L244.75 114.995ZM249.12 57.105L292.81 82.265L249.12 107.425L205.43 82.265L249.12 57.105ZM114.49 184.425L96.13 194.995V85.305L121.49 70.705L139.85 60.135V169.815L114.49 184.425ZM91.76 27.425L135.45 52.585L91.76 77.745L48.07 52.585L91.76 27.425ZM43.67 60.135L62.03 70.705L87.39 85.305V202.545V202.555V202.565C87.39 202.735 87.44 202.895 87.46 203.055C87.49 203.265 87.49 203.485 87.55 203.695V203.705C87.6 203.875 87.69 204.035 87.76 204.195C87.84 204.375 87.89 204.575 87.99 204.745C87.99 204.745 87.99 204.755 88 204.755C88.09 204.905 88.22 205.035 88.33 205.175C88.45 205.335 88.55 205.495 88.69 205.635L88.7 205.645C88.82 205.765 88.98 205.855 89.12 205.965C89.28 206.085 89.42 206.225 89.59 206.325C89.6 206.325 89.6 206.325 89.61 206.335C89.62 206.335 89.62 206.345 89.63 206.345L139.87 234.775V285.065L43.67 229.705V60.135ZM244.75 229.705L148.58 285.075V234.775L219.8 194.115L244.75 179.875V229.705ZM297.2 139.625L253.49 164.795V114.995L278.85 100.395L297.21 89.825V139.625H297.2Z");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "class", svg_class_value = /*$$props*/ ctx[0].class);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 316 316");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, svg, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, path);
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*$$props*/ 1 && svg_class_value !== (svg_class_value = /*$$props*/ ctx[0].class)) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "class", svg_class_value);
+			}
+		},
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(svg);
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	$$self.$$set = $$new_props => {
+		$$invalidate(0, $$props = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.assign)((0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.assign)({}, $$props), (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.exclude_internal_props)($$new_props)));
+	};
+
+	$$props = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.exclude_internal_props)($$props);
+	return [$$props];
+}
+
+class ApplicationLogo extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, {});
+	}
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ApplicationLogo);
+
+/***/ }),
+
+/***/ "./resources/js/Components/Button.svelte":
+/*!***********************************************!*\
+  !*** ./resources/js/Components/Button.svelte ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
 /* resources/js/Components/Button.svelte generated by Svelte v3.46.4 */
 
 
 function create_fragment(ctx) {
 	let button;
 	let t;
+	let button_disabled_value;
 	let button_class_value;
 	let mounted;
 	let dispose;
@@ -29186,8 +27560,13 @@ function create_fragment(ctx) {
 		c() {
 			button = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("button");
 			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*text*/ ctx[0]);
+			button.disabled = button_disabled_value = !/*enabled*/ ctx[1];
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(button, "type", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(button, "class", button_class_value = "" + ((0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.null_to_empty)(/*$$props*/ ctx[2].class) + " svelte-1fvcghg"));
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(button, "class", button_class_value = `rounded py-2 px-4 font-bold text-white ${/*enabled*/ ctx[1]
+			? "bg-blue-500 hover:bg-blue-600"
+			: "bg-gray-400"}`);
+
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(button, "active", /*enabled*/ ctx[1]);
 		},
 		m(target, anchor) {
@@ -29195,18 +27574,24 @@ function create_fragment(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(button, t);
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(button, "click", /*click_handler*/ ctx[3]);
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(button, "click", /*click_handler*/ ctx[2]);
 				mounted = true;
 			}
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*text*/ 1) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, /*text*/ ctx[0]);
 
-			if (dirty & /*$$props*/ 4 && button_class_value !== (button_class_value = "" + ((0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.null_to_empty)(/*$$props*/ ctx[2].class) + " svelte-1fvcghg"))) {
+			if (dirty & /*enabled*/ 2 && button_disabled_value !== (button_disabled_value = !/*enabled*/ ctx[1])) {
+				button.disabled = button_disabled_value;
+			}
+
+			if (dirty & /*enabled*/ 2 && button_class_value !== (button_class_value = `rounded py-2 px-4 font-bold text-white ${/*enabled*/ ctx[1]
+			? "bg-blue-500 hover:bg-blue-600"
+			: "bg-gray-400"}`)) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(button, "class", button_class_value);
 			}
 
-			if (dirty & /*$$props, enabled*/ 6) {
+			if (dirty & /*enabled, enabled*/ 2) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(button, "active", /*enabled*/ ctx[1]);
 			}
 		},
@@ -29222,20 +27607,18 @@ function create_fragment(ctx) {
 
 function instance($$self, $$props, $$invalidate) {
 	let { text = "" } = $$props;
-	let { enabled = true } = $$props;
+	let { enabled = false } = $$props;
 
 	function click_handler(event) {
 		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
 	}
 
-	$$self.$$set = $$new_props => {
-		$$invalidate(2, $$props = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.assign)((0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.assign)({}, $$props), (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.exclude_internal_props)($$new_props)));
-		if ('text' in $$new_props) $$invalidate(0, text = $$new_props.text);
-		if ('enabled' in $$new_props) $$invalidate(1, enabled = $$new_props.enabled);
+	$$self.$$set = $$props => {
+		if ('text' in $$props) $$invalidate(0, text = $$props.text);
+		if ('enabled' in $$props) $$invalidate(1, enabled = $$props.enabled);
 	};
 
-	$$props = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.exclude_internal_props)($$props);
-	return [text, enabled, $$props, click_handler];
+	return [text, enabled, click_handler];
 }
 
 class Button extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
@@ -29245,115 +27628,7 @@ class Button extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponen
 	}
 }
 
-if (module && module.hot) {}
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Button);
-
-
-
-
-/***/ }),
-
-/***/ "./resources/js/Components/Card.svelte":
-/*!*********************************************!*\
-  !*** ./resources/js/Components/Card.svelte ***!
-  \*********************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var _Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_node_modules_svelte_loader_lib_hot_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/svelte-loader/lib/hot-api.js */ "./node_modules/svelte-loader/lib/hot-api.js");
-/* harmony import */ var _Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_node_modules_svelte_hmr_runtime_proxy_adapter_dom_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/svelte-hmr/runtime/proxy-adapter-dom.js */ "./node_modules/svelte-hmr/runtime/proxy-adapter-dom.js");
-/* harmony import */ var _Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_resources_js_Components_Card_svelte_2_css_svelte_loader_cssPath_Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_resources_js_Components_Card_svelte_2_css_Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_resources_js_Components_Card_svelte__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./resources/js/Components/Card.svelte.2.css!=!svelte-loader?cssPath=/Users/braedenfoster/Documents/Dev/Laravel-Inertiajs-Template/resources/js/Components/Card.svelte.2.css!./resources/js/Components/Card.svelte */ "./resources/js/Components/Card.svelte.2.css!=!./node_modules/svelte-loader/index.js?cssPath=/Users/braedenfoster/Documents/Dev/Laravel-Inertiajs-Template/resources/js/Components/Card.svelte.2.css!./resources/js/Components/Card.svelte");
-/* module decorator */ module = __webpack_require__.hmd(module);
-/* resources/js/Components/Card.svelte generated by Svelte v3.46.4 */
-
-
-function create_fragment(ctx) {
-	let div;
-	let div_class_value;
-	let current;
-	const default_slot_template = /*#slots*/ ctx[2].default;
-	const default_slot = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_slot)(default_slot_template, ctx, /*$$scope*/ ctx[1], null);
-
-	return {
-		c() {
-			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			if (default_slot) default_slot.c();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", div_class_value = "" + ((0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.null_to_empty)(/*$$props*/ ctx[0].class) + " svelte-hatpp5"));
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
-
-			if (default_slot) {
-				default_slot.m(div, null);
-			}
-
-			current = true;
-		},
-		p(ctx, [dirty]) {
-			if (default_slot) {
-				if (default_slot.p && (!current || dirty & /*$$scope*/ 2)) {
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_slot_base)(
-						default_slot,
-						default_slot_template,
-						ctx,
-						/*$$scope*/ ctx[1],
-						!current
-						? (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.get_all_dirty_from_scope)(/*$$scope*/ ctx[1])
-						: (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.get_slot_changes)(default_slot_template, /*$$scope*/ ctx[1], dirty, null),
-						null
-					);
-				}
-			}
-
-			if (!current || dirty & /*$$props*/ 1 && div_class_value !== (div_class_value = "" + ((0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.null_to_empty)(/*$$props*/ ctx[0].class) + " svelte-hatpp5"))) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", div_class_value);
-			}
-		},
-		i(local) {
-			if (current) return;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(default_slot, local);
-			current = true;
-		},
-		o(local) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(default_slot, local);
-			current = false;
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
-			if (default_slot) default_slot.d(detaching);
-		}
-	};
-}
-
-function instance($$self, $$props, $$invalidate) {
-	let { $$slots: slots = {}, $$scope } = $$props;
-
-	$$self.$$set = $$new_props => {
-		$$invalidate(0, $$props = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.assign)((0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.assign)({}, $$props), (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.exclude_internal_props)($$new_props)));
-		if ('$$scope' in $$new_props) $$invalidate(1, $$scope = $$new_props.$$scope);
-	};
-
-	$$props = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.exclude_internal_props)($$props);
-	return [$$props, $$scope, slots];
-}
-
-class Card extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
-	constructor(options) {
-		super();
-		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, {});
-	}
-}
-
-if (module && module.hot) {}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Card);
-
-
-
 
 /***/ }),
 
@@ -29361,7 +27636,7 @@ if (module && module.hot) {}
 /*!**************************************************!*\
   !*** ./resources/js/Components/LoginForm.svelte ***!
   \**************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -29371,12 +27646,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
 /* harmony import */ var _Components_Button_svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Components/Button.svelte */ "./resources/js/Components/Button.svelte");
 /* harmony import */ var _inertiajs_inertia_svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-svelte */ "./node_modules/@inertiajs/inertia-svelte/src/index.js");
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils */ "./resources/js/utils/index.js");
-/* harmony import */ var _Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_node_modules_svelte_loader_lib_hot_api_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/svelte-loader/lib/hot-api.js */ "./node_modules/svelte-loader/lib/hot-api.js");
-/* harmony import */ var _Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_node_modules_svelte_hmr_runtime_proxy_adapter_dom_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/svelte-hmr/runtime/proxy-adapter-dom.js */ "./node_modules/svelte-hmr/runtime/proxy-adapter-dom.js");
-/* module decorator */ module = __webpack_require__.hmd(module);
 /* resources/js/Components/LoginForm.svelte generated by Svelte v3.46.4 */
-
 
 
 
@@ -29411,7 +27681,11 @@ function create_fragment(ctx) {
 	let dispose;
 
 	button = new _Components_Button_svelte__WEBPACK_IMPORTED_MODULE_1__["default"]({
-			props: { type: "submit", text: "Sign in" }
+			props: {
+				enabled: /*submitEnabled*/ ctx[1],
+				type: "submit",
+				text: "Sign in"
+			}
 		});
 
 	return {
@@ -29502,10 +27776,10 @@ function create_fragment(ctx) {
 
 			if (!mounted) {
 				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input0, "input", /*input0_input_handler*/ ctx[3]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input1, "input", /*input1_input_handler*/ ctx[4]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input2, "change", /*input2_change_handler*/ ctx[5]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(form_1, "submit", (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.prevent_default)(/*login*/ ctx[2]))
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input0, "input", /*input0_input_handler*/ ctx[4]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input1, "input", /*input1_input_handler*/ ctx[5]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input2, "change", /*input2_change_handler*/ ctx[6]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(form_1, "submit", (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.prevent_default)(/*login*/ ctx[3]))
 				];
 
 				mounted = true;
@@ -29523,6 +27797,10 @@ function create_fragment(ctx) {
 			if (dirty & /*$form*/ 1) {
 				input2.checked = /*$form*/ ctx[0].remember;
 			}
+
+			const button_changes = {};
+			if (dirty & /*submitEnabled*/ 2) button_changes.enabled = /*submitEnabled*/ ctx[1];
+			button.$set(button_changes);
 		},
 		i(local) {
 			if (current) return;
@@ -29543,7 +27821,9 @@ function create_fragment(ctx) {
 }
 
 function instance($$self, $$props, $$invalidate) {
+	let submitEnabled;
 	let $form;
+	let route = window.route;
 
 	let form = (0,_inertiajs_inertia_svelte__WEBPACK_IMPORTED_MODULE_2__.useForm)({
 		email: "johndoe@example.com",
@@ -29554,7 +27834,7 @@ function instance($$self, $$props, $$invalidate) {
 	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, form, value => $$invalidate(0, $form = value));
 
 	function login() {
-		$form.post((0,_utils__WEBPACK_IMPORTED_MODULE_3__.route)("login.store"));
+		$form.post(route("login.store"));
 	}
 
 	function input0_input_handler() {
@@ -29572,8 +27852,17 @@ function instance($$self, $$props, $$invalidate) {
 		form.set($form);
 	}
 
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty & /*$form*/ 1) {
+			$: $$invalidate(1, submitEnabled = $form.email !== "" && $form.password !== ""
+			? true
+			: false);
+		}
+	};
+
 	return [
 		$form,
+		submitEnabled,
 		form,
 		login,
 		input0_input_handler,
@@ -29589,18 +27878,15 @@ class LoginForm extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteCompo
 	}
 }
 
-if (module && module.hot) {}
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LoginForm);
-
-
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Dashboard.svelte":
-/*!*********************************************!*\
-  !*** ./resources/js/Pages/Dashboard.svelte ***!
-  \*********************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ "./resources/js/Layouts/Guest.svelte":
+/*!*******************************************!*\
+  !*** ./resources/js/Layouts/Guest.svelte ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -29608,52 +27894,130 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var _Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_node_modules_svelte_loader_lib_hot_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/svelte-loader/lib/hot-api.js */ "./node_modules/svelte-loader/lib/hot-api.js");
-/* harmony import */ var _Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_node_modules_svelte_hmr_runtime_proxy_adapter_dom_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/svelte-hmr/runtime/proxy-adapter-dom.js */ "./node_modules/svelte-hmr/runtime/proxy-adapter-dom.js");
-/* module decorator */ module = __webpack_require__.hmd(module);
-/* resources/js/Pages/Dashboard.svelte generated by Svelte v3.46.4 */
+/* harmony import */ var _inertiajs_inertia_svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-svelte */ "./node_modules/@inertiajs/inertia-svelte/src/index.js");
+/* harmony import */ var _Components_ApplicationLogo_svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Components/ApplicationLogo.svelte */ "./resources/js/Components/ApplicationLogo.svelte");
+/* resources/js/Layouts/Guest.svelte generated by Svelte v3.46.4 */
+
+
+
 
 
 function create_fragment(ctx) {
-	let main;
+	let div2;
+	let div0;
+	let a;
+	let applicationlogo;
+	let inertia_action;
+	let t;
+	let div1;
+	let current;
+	let mounted;
+	let dispose;
+
+	applicationlogo = new _Components_ApplicationLogo_svelte__WEBPACK_IMPORTED_MODULE_2__["default"]({
+			props: {
+				class: "h-20 w-20 fill-current text-gray-500"
+			}
+		});
+
+	const default_slot_template = /*#slots*/ ctx[1].default;
+	const default_slot = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_slot)(default_slot_template, ctx, /*$$scope*/ ctx[0], null);
 
 	return {
 		c() {
-			main = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("main");
-			main.innerHTML = `<h1 class="text-4xl font-bold">Welcome</h1>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(main, "class", "container m-6");
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			a = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("a");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(applicationlogo.$$.fragment);
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			if (default_slot) default_slot.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(a, "href", "/");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "mt-6 w-full overflow-hidden bg-white px-6 py-4 shadow-md sm:max-w-md sm:rounded-lg");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "flex min-h-screen flex-col items-center bg-gray-100 pt-6 sm:justify-center sm:pt-0");
 		},
 		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, main, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, a);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(applicationlogo, a, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+
+			if (default_slot) {
+				default_slot.m(div1, null);
+			}
+
+			current = true;
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.action_destroyer)(inertia_action = _inertiajs_inertia_svelte__WEBPACK_IMPORTED_MODULE_1__.inertia.call(null, a));
+				mounted = true;
+			}
 		},
-		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		p(ctx, [dirty]) {
+			if (default_slot) {
+				if (default_slot.p && (!current || dirty & /*$$scope*/ 1)) {
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_slot_base)(
+						default_slot,
+						default_slot_template,
+						ctx,
+						/*$$scope*/ ctx[0],
+						!current
+						? (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.get_all_dirty_from_scope)(/*$$scope*/ ctx[0])
+						: (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.get_slot_changes)(default_slot_template, /*$$scope*/ ctx[0], dirty, null),
+						null
+					);
+				}
+			}
+		},
+		i(local) {
+			if (current) return;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(applicationlogo.$$.fragment, local);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(default_slot, local);
+			current = true;
+		},
+		o(local) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(applicationlogo.$$.fragment, local);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(default_slot, local);
+			current = false;
+		},
 		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(main);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(applicationlogo);
+			if (default_slot) default_slot.d(detaching);
+			mounted = false;
+			dispose();
 		}
 	};
 }
 
-class Dashboard extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+function instance($$self, $$props, $$invalidate) {
+	let { $$slots: slots = {}, $$scope } = $$props;
+
+	$$self.$$set = $$props => {
+		if ('$$scope' in $$props) $$invalidate(0, $$scope = $$props.$$scope);
+	};
+
+	return [$$scope, slots];
+}
+
+class Guest extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
 	constructor(options) {
 		super();
-		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, null, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, {});
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, {});
 	}
 }
 
-if (module && module.hot) {}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Dashboard);
-
-
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Guest);
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Login.svelte":
-/*!*****************************************!*\
-  !*** ./resources/js/Pages/Login.svelte ***!
-  \*****************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ "./resources/js/Pages/Auth/Login.svelte":
+/*!**********************************************!*\
+  !*** ./resources/js/Pages/Auth/Login.svelte ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -29661,12 +28025,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var _Components_LoginForm_svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Components/LoginForm.svelte */ "./resources/js/Components/LoginForm.svelte");
-/* harmony import */ var _Components_Card_svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Components/Card.svelte */ "./resources/js/Components/Card.svelte");
-/* harmony import */ var _Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_node_modules_svelte_loader_lib_hot_api_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/svelte-loader/lib/hot-api.js */ "./node_modules/svelte-loader/lib/hot-api.js");
-/* harmony import */ var _Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_node_modules_svelte_hmr_runtime_proxy_adapter_dom_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/svelte-hmr/runtime/proxy-adapter-dom.js */ "./node_modules/svelte-hmr/runtime/proxy-adapter-dom.js");
-/* module decorator */ module = __webpack_require__.hmd(module);
-/* resources/js/Pages/Login.svelte generated by Svelte v3.46.4 */
+/* harmony import */ var _Components_LoginForm_svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Components/LoginForm.svelte */ "./resources/js/Components/LoginForm.svelte");
+/* harmony import */ var _Layouts_Guest_svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Layouts/Guest.svelte */ "./resources/js/Layouts/Guest.svelte");
+/* resources/js/Pages/Auth/Login.svelte generated by Svelte v3.46.4 */
 
 
 
@@ -29702,10 +28063,10 @@ function create_default_slot(ctx) {
 
 function create_fragment(ctx) {
 	let main;
-	let card;
+	let guestlayout;
 	let current;
 
-	card = new _Components_Card_svelte__WEBPACK_IMPORTED_MODULE_2__["default"]({
+	guestlayout = new _Layouts_Guest_svelte__WEBPACK_IMPORTED_MODULE_2__["default"]({
 			props: {
 				$$slots: { default: [create_default_slot] },
 				$$scope: { ctx }
@@ -29715,35 +28076,35 @@ function create_fragment(ctx) {
 	return {
 		c() {
 			main = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("main");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(card.$$.fragment);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(guestlayout.$$.fragment);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(main, "class", "container mx-auto");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, main, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(card, main, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(guestlayout, main, null);
 			current = true;
 		},
 		p(ctx, [dirty]) {
-			const card_changes = {};
+			const guestlayout_changes = {};
 
 			if (dirty & /*$$scope*/ 1) {
-				card_changes.$$scope = { dirty, ctx };
+				guestlayout_changes.$$scope = { dirty, ctx };
 			}
 
-			card.$set(card_changes);
+			guestlayout.$set(guestlayout_changes);
 		},
 		i(local) {
 			if (current) return;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(card.$$.fragment, local);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(guestlayout.$$.fragment, local);
 			current = true;
 		},
 		o(local) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(card.$$.fragment, local);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(guestlayout.$$.fragment, local);
 			current = false;
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(main);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(card);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(guestlayout);
 		}
 	};
 }
@@ -29755,18 +28116,15 @@ class Login extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent
 	}
 }
 
-if (module && module.hot) {}
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Login);
-
-
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Welcome.svelte":
-/*!*******************************************!*\
-  !*** ./resources/js/Pages/Welcome.svelte ***!
-  \*******************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ "./resources/js/Pages/Dashboard.svelte":
+/*!*********************************************!*\
+  !*** ./resources/js/Pages/Dashboard.svelte ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -29774,10 +28132,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var _Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_node_modules_svelte_loader_lib_hot_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/svelte-loader/lib/hot-api.js */ "./node_modules/svelte-loader/lib/hot-api.js");
-/* harmony import */ var _Users_braedenfoster_Documents_Dev_Laravel_Inertiajs_Template_node_modules_svelte_hmr_runtime_proxy_adapter_dom_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/svelte-hmr/runtime/proxy-adapter-dom.js */ "./node_modules/svelte-hmr/runtime/proxy-adapter-dom.js");
-/* module decorator */ module = __webpack_require__.hmd(module);
-/* resources/js/Pages/Welcome.svelte generated by Svelte v3.46.4 */
+/* resources/js/Pages/Dashboard.svelte generated by Svelte v3.46.4 */
 
 
 function create_fragment(ctx) {
@@ -29786,11 +28141,8 @@ function create_fragment(ctx) {
 	return {
 		c() {
 			main = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("main");
-
-			main.innerHTML = `<h1 class="text-center text-4xl font-bold text-orange-500">Welcome to a Laravel + Svelte App!</h1> 
-  <div class="text-center text-4xl">🎉 🙌</div>`;
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(main, "class", "flex h-screen flex-col justify-center gap-6");
+			main.innerHTML = `<h1 class="text-4xl font-bold">Welcome</h1>`;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(main, "class", "container m-6");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, main, anchor);
@@ -29804,6 +28156,84 @@ function create_fragment(ctx) {
 	};
 }
 
+class Dashboard extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, null, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, {});
+	}
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Dashboard);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Welcome.svelte":
+/*!*******************************************!*\
+  !*** ./resources/js/Pages/Welcome.svelte ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var _inertiajs_inertia_svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-svelte */ "./node_modules/@inertiajs/inertia-svelte/src/index.js");
+/* resources/js/Pages/Welcome.svelte generated by Svelte v3.46.4 */
+
+
+
+
+function create_fragment(ctx) {
+	let div0;
+	let a;
+	let inertia_action;
+	let t1;
+	let main;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			a = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("a");
+			a.textContent = "Login";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			main = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("main");
+
+			main.innerHTML = `<h1 class="text-center text-4xl font-bold text-orange-500">Welcome to a Laravel + Svelte App!</h1> 
+  <div class="text-center text-4xl">🎉 🙌</div>`;
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(a, "class", "hover:underline");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(a, "href", "login");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bg-gray-50 p-3 shadow-md");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(main, "class", "flex h-screen flex-col justify-center gap-6");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, a);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, main, anchor);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.action_destroyer)(inertia_action = _inertiajs_inertia_svelte__WEBPACK_IMPORTED_MODULE_1__.inertia.call(null, a));
+				mounted = true;
+			}
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div0);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(main);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
 class Welcome extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
 	constructor(options) {
 		super();
@@ -29811,129 +28241,7 @@ class Welcome extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteCompone
 	}
 }
 
-if (module && module.hot) {}
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Welcome);
-
-
-
-/***/ }),
-
-/***/ "./node_modules/svelte-loader/lib/hot-api.js":
-/*!***************************************************!*\
-  !*** ./node_modules/svelte-loader/lib/hot-api.js ***!
-  \***************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "applyHmr": () => (/* binding */ applyHmr)
-/* harmony export */ });
-/* harmony import */ var svelte_hmr_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte-hmr/runtime */ "./node_modules/svelte-hmr/runtime/index.js");
-
-
-// eslint-disable-next-line no-undef
-const g = typeof window !== 'undefined' ? window : __webpack_require__.g;
-
-const globalKey =
-	typeof Symbol !== 'undefined'
-		? Symbol('SVELTE_LOADER_HOT')
-		: '__SVELTE_LOADER_HOT';
-
-if (!g[globalKey]) {
-	// do updating refs counting to know when a full update has been applied
-	let updatingCount = 0;
-
-	const notifyStart = () => {
-		updatingCount++;
-	};
-
-	const notifyError = reload => err => {
-		const errString = (err && err.stack) || err;
-		// eslint-disable-next-line no-console
-		console.error(
-			'[HMR] Failed to accept update (nollup compat mode)',
-			errString
-		);
-		reload();
-		notifyEnd();
-	};
-
-	const notifyEnd = () => {
-		updatingCount--;
-		if (updatingCount === 0) {
-			// NOTE this message is important for timing in tests
-			// eslint-disable-next-line no-console
-			console.log('[HMR:Svelte] Up to date');
-		}
-	};
-
-	g[globalKey] = {
-		hotStates: {},
-		notifyStart,
-		notifyError,
-		notifyEnd,
-	};
-}
-
-const runAcceptHandlers = acceptHandlers => {
-	const queue = [...acceptHandlers];
-	const next = () => {
-		const cur = queue.shift();
-		if (cur) {
-			return cur(null).then(next);
-		} else {
-			return Promise.resolve(null);
-		}
-	};
-	return next();
-};
-
-const applyHmr = (0,svelte_hmr_runtime__WEBPACK_IMPORTED_MODULE_0__.makeApplyHmr)(args => {
-	const { notifyStart, notifyError, notifyEnd } = g[globalKey];
-	const { m, reload } = args;
-
-	let acceptHandlers = (m.hot.data && m.hot.data.acceptHandlers) || [];
-	let nextAcceptHandlers = [];
-
-	m.hot.dispose(data => {
-		data.acceptHandlers = nextAcceptHandlers;
-	});
-
-	const dispose = (...args) => m.hot.dispose(...args);
-
-	const accept = handler => {
-		if (nextAcceptHandlers.length === 0) {
-			m.hot.accept();
-		}
-		nextAcceptHandlers.push(handler);
-	};
-
-	const check = status => {
-		if (status === 'ready') {
-			notifyStart();
-		} else if (status === 'idle') {
-			runAcceptHandlers(acceptHandlers)
-				.then(notifyEnd)
-				.catch(notifyError(reload));
-		}
-	};
-
-	m.hot.addStatusHandler(check);
-
-	m.hot.dispose(() => {
-		m.hot.removeStatusHandler(check);
-	});
-
-	const hot = {
-		data: m.hot.data,
-		dispose,
-		accept,
-	};
-
-	return { ...args, hot };
-});
-
 
 /***/ }),
 
@@ -29944,8 +28252,8 @@ const applyHmr = (0,svelte_hmr_runtime__WEBPACK_IMPORTED_MODULE_0__.makeApplyHmr
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
+	"./Auth/Login.svelte": "./resources/js/Pages/Auth/Login.svelte",
 	"./Dashboard.svelte": "./resources/js/Pages/Dashboard.svelte",
-	"./Login.svelte": "./resources/js/Pages/Login.svelte",
 	"./Welcome.svelte": "./resources/js/Pages/Welcome.svelte"
 };
 
@@ -32552,21 +30860,6 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 				if (typeof window === 'object') return window;
 /******/ 			}
 /******/ 		})();
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/harmony module decorator */
-/******/ 	(() => {
-/******/ 		__webpack_require__.hmd = (module) => {
-/******/ 			module = Object.create(module);
-/******/ 			if (!module.children) module.children = [];
-/******/ 			Object.defineProperty(module, 'exports', {
-/******/ 				enumerable: true,
-/******/ 				set: () => {
-/******/ 					throw new Error('ES Modules may not assign module.exports or exports.*, Use ESM export syntax, instead: ' + module.id);
-/******/ 				}
-/******/ 			});
-/******/ 			return module;
-/******/ 		};
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

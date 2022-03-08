@@ -1,13 +1,17 @@
 <script>
   import Button from "../Components/Button.svelte";
   import { useForm } from "@inertiajs/inertia-svelte";
-  import { route } from "../utils";
+  // import { route } from "@/utils";
+
+  let route = window.route;
 
   let form = useForm({
     email: "johndoe@example.com",
     password: "secret",
     remember: false,
   });
+
+  $: submitEnabled = $form.email !== "" && $form.password !== "" ? true : false;
 
   function login() {
     $form.post(route("login.store"));
@@ -53,7 +57,7 @@
     </div>
   </div>
   <div class="flex items-center justify-between">
-    <Button type="submit" text="Sign in" />
+    <Button enabled={submitEnabled} type="submit" text="Sign in" />
     <a
       class="text-blue hover:text-blue-darker inline-block align-baseline text-sm font-bold"
       href="/"

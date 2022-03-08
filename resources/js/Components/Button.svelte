@@ -1,22 +1,16 @@
 <script>
   export let text = "";
-  export let enabled = true;
+  export let enabled = false;
 </script>
 
-<button type on:click class:active={enabled} class={$$props.class}>
+<button
+  disabled={!enabled}
+  type
+  on:click
+  class:active={enabled}
+  class={`rounded py-2 px-4 font-bold text-white ${
+    enabled ? "bg-blue-500 hover:bg-blue-600" : "bg-gray-400"
+  }`}
+>
   {text}
 </button>
-
-<style lang="postcss">
-  button {
-    @apply rounded bg-gray-400 py-2 px-4 font-bold text-white;
-  }
-
-  .active {
-    @apply bg-blue-500;
-  }
-
-  .active:hover {
-    @apply bg-blue-600;
-  }
-</style>

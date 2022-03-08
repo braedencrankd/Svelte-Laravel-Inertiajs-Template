@@ -1,9 +1,3 @@
-<div class={$$props.class}>
+<div class="m-3 flex flex-col justify-center rounded-md p-3 shadow-md">
   <slot />
 </div>
-
-<style lang="postcss">
-  div {
-    @apply m-3 flex flex-col justify-center rounded-md p-3 shadow-md;
-  }
-</style>
