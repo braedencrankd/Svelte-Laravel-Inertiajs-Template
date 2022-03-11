@@ -34,19 +34,19 @@ composer install
 **Install NPM dependencies:**
 
 ```sh
-npm ci
+pnpm i
 ```
 
 **Build assets:**
 
 ```sh
-npm run dev
+pnpm run dev
 ```
 
 **Run with hot module reloading:**
 
 ```sh
-npm run hot
+pnpm run hot
 ```
 
 ## Setup Database

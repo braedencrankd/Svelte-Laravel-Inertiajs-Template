@@ -1,9 +1,9 @@
 <?php
 
 use App\Models\User;
-use Inertia\Inertia;
-use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
+use Illuminate\Support\Facades\Route;
+use Inertia\Inertia;
 use Statamic\Facades\Entry;
 
 /*
@@ -15,14 +15,11 @@ use Statamic\Facades\Entry;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
-
+ */
 
 require __DIR__ . '/auth.php';
 
-
 Route::get('/', function () {
-
 
     $entries = Entry::query()
         ->where('collection', 'posts')
@@ -31,6 +28,26 @@ Route::get('/', function () {
 
     $entry = Entry::findBySlug('first-post', 'posts');
 
+    // $sections = [
+    //     [
+    //         'bg' => 'bg-primary',
+    //         'blocks' => [
+    //             ['id' => 'text-block-one', 'heading' => 'TEST'],
+    //             ['id' => 'text-block-two', 'heading' => 'TEST'],
+    //         ],
+    //     ],
+    //     [
+    //         'bg' => 'bg-primary',
+    //         'blocks' => [
+    //             ['id' => 'text-block-one', 'heading' => 'TEST'],
+    //             ['id' => 'text-block-two', 'heading' => 'TEST'],
+    //         ],
+    //     ],
+    // ];
+
+    // echo '<pre>', print_r($sections, true), '</pre>';
+    // echo '<pre>', print_r(json_encode($sections), true), '</pre>';
+
     // $entry = Entry::make()
     //     ->published()
     //     ->data(['title' => 'Updated Title'])
@@ -38,7 +55,7 @@ Route::get('/', function () {
 
     // $entry->save();
 
-    echo '<pre>', print_r($entry, true), '</pre>';
+    // echo '<pre>', print_r($entry, true), '</pre>';
 
     $posts = Entry::query()
         ->where('collection', 'posts')->find('first-post');
@@ -53,8 +70,6 @@ Route::get('/', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 });
-
-
 
 Route::get('/posts/{slug}', function ($slug) {
 
